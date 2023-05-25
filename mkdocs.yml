@@ -1,6 +1,7 @@
 site_name: Chet Sheets
 nav:
   - Home: index.md
+  - AWS Services: aws-services.md
   - About: about.md
 theme:
   name: material
