@@ -1,7 +1,11 @@
 site_name: Chet Sheets
 nav:
+  - Angular CLI Cheat Sheet: sheets/Angular-CLI-Cheat-Sheet.md
+  - AWS Services: sheets/Top-30-AWS-services.md
+  - Git Cheat Sheet: sheets/Git-Cheat-Sheet.md
+  - Docker Cheat Sheet: sheets/Docker-Cheat-Sheet.md
+  - RxJs Cheat Sheet: sheets/RxJs-Cheat-Sheet.md
   - Home: index.md
-  - AWS Services: aws-services.md
   - About: about.md
 theme:
   name: material
