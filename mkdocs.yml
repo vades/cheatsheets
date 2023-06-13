@@ -1,5 +1,7 @@
+# Basics
 site_name: Chet Sheets
 nav:
+  - Tags: tags.md
   - Angular CLI Cheat Sheet: sheets/Angular-CLI-Cheat-Sheet.md
   - AWS Services: sheets/Top-30-AWS-services.md
   - Git Cheat Sheet: sheets/Git-Cheat-Sheet.md
@@ -11,8 +13,19 @@ theme:
   name: material
   logo: assets/images/logo.png
   features:
-    - navigation.footer
     - navigation.sections
     - navigation.indexes
     - navigation.top
 copyright: "© 2023 Martin Vach"
+# blog implementation
+site_url: http://127.0.0.1:8000/
+plugins:
+  - blogging:
+      features:
+        tags: {}
+      dirs: # The directories to be included
+        - blog
+      template: override/my-blog.html
+      full_content: false
+      time_format: "%Y-%m-%d"
+      meta_time_format: "%Y-%m-%d"
