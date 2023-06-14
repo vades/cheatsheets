@@ -1,6 +1,7 @@
 # Basics
 site_name: Chet Sheets
 nav:
+  - Cheat Sheets: cheat-sheets.md
   - Tags: tags.md
   - Angular CLI Cheat Sheet: sheets/Angular-CLI-Cheat-Sheet.md
   - AWS Services: sheets/Top-30-AWS-services.md
@@ -30,6 +31,10 @@ plugins:
         tags: {}
       dirs: # The directories to be included
         - blog
+      categories:
+        - name: cheat-sheets
+          dirs:
+            - cheat-sheets
       template: overrides/my-blog.html
       full_content: false
       time_format: "%Y-%m-%d"
