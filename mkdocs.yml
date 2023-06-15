@@ -34,3 +34,4 @@ plugins:
       full_content: false
       time_format: "%Y-%m-%d"
       meta_time_format: "%Y-%m-%d"
+      locale: en

@@ -164,3 +164,4 @@ cython_debug/
 .vscode
 _project
 HINTS.md
+github-actions.yml
