@@ -1,18 +1,37 @@
+# Basics
 site_name: Chet Sheets
 nav:
-  - Angular CLI Cheat Sheet: sheets/Angular-CLI-Cheat-Sheet.md
-  - AWS Services: sheets/Top-30-AWS-services.md
-  - Git Cheat Sheet: sheets/Git-Cheat-Sheet.md
-  - Docker Cheat Sheet: sheets/Docker-Cheat-Sheet.md
-  - RxJs Cheat Sheet: sheets/RxJs-Cheat-Sheet.md
   - Home: index.md
+  - Cheat Sheets: cheat-sheets.md
+  - Tags: tags.md
   - About: about.md
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/images/logo.png
+  search:
+    provider: "internal"
   features:
-    - navigation.footer
     - navigation.sections
     - navigation.indexes
     - navigation.top
 copyright: "© 2023 Martin Vach"
+extra_css:
+  - "styles/styles.css"
+# blog implementation
+site_url: http://127.0.0.1:8000/
+plugins:
+  - blogging:
+      features:
+        tags: {}
+      dirs: # The directories to be included
+        - blog
+      categories:
+        - name: cheat-sheets
+          dirs:
+            - cheat-sheets
+      template: overrides/my-blog.html
+      full_content: false
+      time_format: "%Y-%m-%d"
+      meta_time_format: "%Y-%m-%d"
+      locale: en
