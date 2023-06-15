@@ -1,4 +1,12 @@
-
+---
+title: Top 30 AWS services
+description: With hundreds of services available, it can be difficult to know which to choose. This list of the 30 most used AWS services is the perfect guide for managers and developers who need to save time.
+status: published
+tags:
+ - rxjs
+ - cheat sheet
+date: 2022-09-19
+---
 # Top 30 AWS services
 With hundreds of services available, it can be difficult to know which to choose. This list of the 30 most used AWS services is the perfect guide for managers and developers who need to save time. Each of the services is linked to more detailed information, so you can quickly find the best services to use in your project.
 
