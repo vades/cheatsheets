@@ -1,14 +1,9 @@
 # Basics
 site_name: Chet Sheets
 nav:
+  - Home: index.md
   - Cheat Sheets: cheat-sheets.md
   - Tags: tags.md
-  - Angular CLI Cheat Sheet: sheets/Angular-CLI-Cheat-Sheet.md
-  - AWS Services: sheets/Top-30-AWS-services.md
-  - Git Cheat Sheet: sheets/Git-Cheat-Sheet.md
-  - Docker Cheat Sheet: sheets/Docker-Cheat-Sheet.md
-  - RxJs Cheat Sheet: sheets/RxJs-Cheat-Sheet.md
-  - Home: index.md
   - About: about.md
 theme:
   name: material

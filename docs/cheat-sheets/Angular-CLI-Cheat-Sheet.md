@@ -1,3 +1,12 @@
+---
+title: Angular CLI Cheat Sheet
+description: This cheat sheet provides a list of frequently used Angular CLI commands
+status: published
+tags:
+ - angular
+ - cheat sheet
+date: 2023-02-15
+---
 # Angular CLI Cheat Sheet
 
 This cheat sheet provides a list of frequently used Angular CLI commands along with a short description and an example for each command.

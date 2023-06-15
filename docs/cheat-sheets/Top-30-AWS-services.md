@@ -1,17 +1,16 @@
 ---
 title: Top 30 AWS services
 description: With hundreds of services available, it can be difficult to know which to choose. This list of the 30 most used AWS services is the perfect guide for managers and developers who need to save time.
-img: img.jpg
-date: "2023-4-13"
+status: published
 tags:
-  - aws
-  - angular
+ - rxjs
+ - cheat sheet
+date: 2022-09-19
 ---
-
 # Top 30 AWS services
 With hundreds of services available, it can be difficult to know which to choose. This list of the 30 most used AWS services is the perfect guide for managers and developers who need to save time. Each of the services is linked to more detailed information, so you can quickly find the best services to use in your project.
 
-| Service Name                                                      | Description                                                                                                                       |
+| Service Name                                                      | Description                                                                                                                 |
 | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | [Amazon EC2](https://aws.amazon.com/ec2/)                         | Web service that provides secure, resizable compute capacity in the cloud                                                         |
 | [Amazon S3](https://aws.amazon.com/s3/)                           | Object storage with a simple web service interface to store and retrieve any amount of data from anywhere                         |

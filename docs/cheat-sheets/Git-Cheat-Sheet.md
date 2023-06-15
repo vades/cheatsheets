@@ -1,3 +1,12 @@
+---
+title: Git Cheat Sheet
+description: This cheat sheet provides a list of 30 commonly used Git commands
+status: published
+tags:
+ - git
+ - cheat sheet
+date: 2023-01-23
+---
 # Git Cheat Sheet
 
 This cheat sheet provides a list of 30 commonly used Git commands along with their short descriptions and examples.
