@@ -1,0 +1,52 @@
+
+<!-- Tags -->
+{% if "material/tags" in config.plugins %}
+  {% include "partials/tags.html" %}
+{% endif %}
+
+<!-- Actions -->
+{% include "partials/actions.html" %}
+
+<!-- Blog post -->
+{% if page.meta.page_type == 'blog-post' %}
+  {% include "partials/blog-extra.html" %}
+{% endif %}
+
+<!--
+  Hack: check whether the content contains a h1 headline. If it doesn't, the
+  page title (or respectively site name) is used as the main headline.
+-->
+{% if "\x3ch1" not in page.content %}
+  <h1>{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
+{% if page.meta.page_type == 'blog-post' and page.meta.description %}
+  <div class="blog-post-perex">
+        {{ page.meta.description }}
+    </div>
+{% endif %}
+<!-- Page content -->
+{{ page.content }}
+
+{% if page.meta.page_type == 'blog-post' and page.meta.tags %}
+    <div class="blogging-tags-grid">
+    {% for tag in page.meta["tags"] %}
+    <a href="/tags#{{tag}}">#{{tag}}</a>
+    
+    {% endfor %}
+    </div>
+ {% endif %}       
+       
+
+<!-- Source file information -->
+{% if page.meta and (
+  page.meta.git_revision_date_localized or
+  page.meta.revision_date
+) %}
+  {% include "partials/source-file.html" %}
+{% endif %}
+
+<!-- Was this page helpful? -->
+{% include "partials/feedback.html" %}
+
+<!-- Comment system -->
+{% include "partials/comments.html" %}

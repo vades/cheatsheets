@@ -1,0 +1,5 @@
+nav:
+    - Home: index.md
+    - cheat-sheets
+    - tags.md
+    - about.md

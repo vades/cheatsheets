@@ -1,0 +1,6 @@
+mkdocs-material==9.1.15
+mkdocs==1.4.3
+mkdocs-blogging-plugin
+mkdocs-extra-sass-plugin==0.1.0
+livereload==2.6.3
+mkdocs-awesome-pages-plugin==2.9.1
