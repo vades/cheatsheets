@@ -24,5 +24,6 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install mkdocs-blogging-plugin
       - run: pip install mkdocs-extra-sass-plugin
+      - run: pip install livereload
       - run: pip install mkdocs-awesome-pages-plugin
       - run: mkdocs gh-deploy --force
