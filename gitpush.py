@@ -13,6 +13,8 @@ file_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 file_handler.setFormatter(file_formatter)
 file_log.addHandler(file_handler)
 
+file_log.debug(f'Initializing Repo and Branch {branch_name}')
+
 
 def git_push(branch_name):
     print('\n*********** Initializing Repo ***********')
@@ -46,7 +48,7 @@ def git_push(branch_name):
             file_log.exception('An error occurred while pushing to git')
 
     else:
-        print("No changes to commit.")
+        print("\n*********** No changes to commit. ***********")
         file_log.warning('No changes to commit.')
 
 
