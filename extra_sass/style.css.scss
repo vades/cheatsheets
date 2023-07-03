@@ -1,0 +1,49 @@
+@import 'variables';
+
+// Navigation
+.md-nav--primary{
+    .md-nav__title{
+        display: none;
+    }
+}
+
+// Home
+.md-content{
+    &.home{
+        .blogging-tags-grid,.blog-post-extra{
+            display: none;
+        }
+    }
+}
+
+// Blogging
+.blog-post{
+    h3 {
+        margin-top: 0;
+    }
+    margin-bottom: $spacing-2x;
+    .blog-post-extra{
+        strong{
+            margin-right: $spacing-0-5x;
+        }
+    }
+} 
+
+
+.blog-post-header{
+    margin-bottom: $spacing;
+    strong{
+        margin-right: $spacing-0-5x;
+    }
+}
+.blog-post-perex{
+    font-size: 110%;
+    font-weight:bold;
+}
+
+.blogging-tags-grid{
+    a{
+        display: inline-block;
+        margin-right: $spacing-0-5x; 
+    }
+}

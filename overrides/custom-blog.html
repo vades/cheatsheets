@@ -1,0 +1,28 @@
+{# Import the original template, required. #}
+{% extends "blog.html" %}
+{# A macro to render a blog entry, required. #}
+{% macro render_blog(title, description, time, url, page) -%}
+<div class="blog-post">
+    <div class="blog-post-extra">
+        <strong>{{ page.meta["author"] if "author" in page.meta else "" }}</strong>
+        <em>{{ time }}</em>
+    </div>
+    <h3 class="blog-post-title">
+        <a class="link" href="{{ url }}">{{ title }}</a>
+    </h3>
+    <div class="blog-post-description">
+        {{ description }}
+    </div>
+    <div class="blog-post-read-more">
+        <a class="link" href="{{ url }}">Read more</a>
+    </div>
+    {% if show_tags_ and "tags" in page.meta %}
+        <div class="blog-post-tags">
+        {% call render_tags(page.meta["tags"], 'pages/tags') %}
+        </div>
+        
+        {% endcall %}
+    {% endif %}
+</div>
+{{ caller() }}
+{%- endmacro %}
