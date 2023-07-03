@@ -33,7 +33,7 @@ copyright: "© 2023 Martin Vach"
 extra_css:
   - "styles/styles.css"
 # blog implementation
-site_url: http://127.0.0.1:8000/
+site_url: https://vades.github.io/cheatsheets/ #http://127.0.0.1:8000/
 watch:
   - "overrides"
 plugins:
