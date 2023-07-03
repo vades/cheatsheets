@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://vades.github.io/cheatsheets/cheat-sheets/" rel="canonical"/>
+<link href="../about/" rel="prev"/>
+<link href="../tags/" rel="next"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.3, mkdocs-material-9.1.18" name="generator"/>
+<title>Cheat Sheets - Chet Sheets</title>
+<link href="../assets/stylesheets/main.26e3688c.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.ecc896b0.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../styles/styles.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../assets/stylesheets/extra-style.3jmk2ihz.min.css" rel="stylesheet"/></head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#cheat-sheets">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Chet Sheets" class="md-header__button md-logo" data-md-component="logo" href=".." title="Chet Sheets">
+<img alt="logo" src="../assets/images/logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Chet Sheets
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Cheat Sheets
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Chet Sheets" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Chet Sheets">
+<img alt="logo" src="../assets/images/logo.png"/>
+</a>
+    Chet Sheets
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+<!-- Render current and nested navigation items -->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="home-nav __nav_1 md-nav__item">
+<a class="md-nav__link" href="..">
+        Home
+      </a>
+</li>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+<!-- Render current and nested navigation items -->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<!-- Determine whether to render item as a section -->
+<!-- Render item with nested items -->
+<li class="cheat sheets-nav __nav_2 md-nav__item md-nav__item--section md-nav__item--nested">
+<!-- Determine checked and indeterminate state -->
+<!-- Active checkbox expands items contained within nested section -->
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox">
+<!-- Determine all nested items that are index pages -->
+<!-- Render toggle to expand nested items -->
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Cheat Sheets
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<!-- Render link to index page + toggle -->
+<!-- Render nested navigation -->
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Cheat Sheets
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<!-- Render nested item list -->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="angular cli cheat sheet-nav __nav_2_1 md-nav__item">
+<a class="md-nav__link" href="Angular-CLI-Cheat-Sheet/">
+        Angular CLI Cheat Sheet
+      </a>
+</li>
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="docker cheat sheet-nav __nav_2_2 md-nav__item">
+<a class="md-nav__link" href="Docker-Cheat-Sheet/">
+        Docker Cheat Sheet
+      </a>
+</li>
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="git cheat sheet-nav __nav_2_3 md-nav__item">
+<a class="md-nav__link" href="Git-Cheat-Sheet/">
+        Git Cheat Sheet
+      </a>
+</li>
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="laravel artisan command cheat sheet-nav __nav_2_4 md-nav__item">
+<a class="md-nav__link" href="Laravel-Cheat-Sheet/">
+        Laravel Artisan Command Cheat Sheet
+      </a>
+</li>
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="nx commands cheat sheet-nav __nav_2_5 md-nav__item">
+<a class="md-nav__link" href="NX-Cheat-Sheet/">
+        NX Commands Cheat Sheet
+      </a>
+</li>
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="rxjs most used operators-nav __nav_2_6 md-nav__item">
+<a class="md-nav__link" href="RxJs-Cheat-Sheet/">
+        RxJS Most Used Operators
+      </a>
+</li>
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="top 30 aws services-nav __nav_2_7 md-nav__item">
+<a class="md-nav__link" href="Top-30-AWS-services/">
+        Top 30 AWS services
+      </a>
+</li>
+</ul>
+</nav>
+</input></li>
+<!-- Currently active page -->
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+<!-- Render current and nested navigation items -->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="tags-nav __nav_3 md-nav__item">
+<a class="md-nav__link" href="../tags/">
+        Tags
+      </a>
+</li>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Wrap everything with a macro to reduce file roundtrips (see #2213) -->
+<!-- Render current and nested navigation items -->
+<!-- Determine class according to state -->
+<!-- Main navigation item with nested items -->
+<li class="about-nav __nav_4 md-nav__item">
+<a class="md-nav__link" href="../about/">
+        About
+      </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content cheat-sheets" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<!-- Tags -->
+<!-- Actions -->
+<!-- Blog post -->
+<!--
+  Hack: check whether the content contains a h1 headline. If it doesn't, the
+  page title (or respectively site name) is used as the main headline.
+-->
+<!-- Page content -->
+<h1 id="cheat-sheets">Cheat Sheets</h1>
+<p>
+
+
+<style>
+    .md-typeset .blog-post:first-of-type h3 {
+        margin-top: 0;
+    }
+
+    .md-typeset .blog-post-title {
+        margin-bottom: 0;
+    }
+
+    .md-typeset .blog-post-extra {
+        color: var(--md-default-fg-color--light);
+    }
+
+    .md-typeset .blog-center {
+        text-align: center;
+    }
+
+    .md-typeset .blog-pagination {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .md-typeset .blog-pagination a {
+        color: var(--md-typeset-color);
+        float: left;
+        padding: .25em 1em;
+        text-decoration: none;
+        border-radius: 1em;
+        margin-left: .25em;
+        margin-right: .25em;
+        transition: all .15s ease-in-out;
+    }
+
+    .md-typeset .blog-pagination a.active {
+        background-color: var(--md-typeset-a-color);
+        color: white;
+        font-weight: bold;
+    }
+
+    .md-typeset .blog-pagination a:hover:not(.active) {
+        background-color: #dddddda1;
+    }
+
+    .md-typeset .blog-hidden {
+        display: none;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+    .md-typeset .blogging-tags-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 5px;
+    }
+
+    .md-typeset .blogging-tag {
+        color: var(--md-typeset-color);
+        background-color: var(--md-typeset-code-color);
+    }
+
+    .md-typeset .blogging-tag code {
+        border-radius: 5px;
+    }
+</style>
+
+    
+
+
+
+
+
+
+
+
+<div class = "md-typeset">
+    <div class="pages">
+        
+            
+            <div class="page" id="page1">
+
+                
+                    
+                    
+                    
+                    
+
+                    
+                    
+                        
+                    
+
+                    
+                    
+                        
+                    
+                    
+                    <div class="blog-post">
+    <h3 class="blog-post-title">
+        <a class="link" href="https://vades.github.io/cheatsheets/cheat-sheets/Docker-Cheat-Sheet/">Docker Cheat Sheet</a>
+    </h3>
+    
+        <div class="blogging-tags-grid">
+        
+        <a href="#docker" class="blogging-tag"><code>#docker</code></a>
+        
+        <a href="#cheat sheet" class="blogging-tag"><code>#cheat sheet</code></a>
+        
+    </div>
+    
+        
+
+    
+    <p class="blog-post-description">
+        This cheat sheet should help you execute common Docker operations
+    </p>
+    <div class="blog-post-extra">
+        Published at: 2023-06-15
+    </div>
+    <hr />
+</div>
+
+                    
+                
+                    
+                    
+                    
+                    
+
+                    
+                    
+                        
+                    
+
+                    
+                    
+                        
+                    
+                    
+                    <div class="blog-post">
+    <h3 class="blog-post-title">
+        <a class="link" href="https://vades.github.io/cheatsheets/cheat-sheets/Angular-CLI-Cheat-Sheet/">Angular CLI Cheat Sheet</a>
+    </h3>
+    
+        <div class="blogging-tags-grid">
+        
+        <a href="#angular" class="blogging-tag"><code>#angular</code></a>
+        
+        <a href="#cheat sheet" class="blogging-tag"><code>#cheat sheet</code></a>
+        
+    </div>
+    
+        
+
+    
+    <p class="blog-post-description">
+        This cheat sheet provides a list of frequently used Angular CLI commands
+    </p>
+    <div class="blog-post-extra">
+        Published at: 2023-02-15
+    </div>
+    <hr />
+</div>
+
+                    
+                
+                    
+                    
+                    
+                    
+
+                    
+                    
+                        
+                    
+
+                    
+                    
+                        
+                    
+                    
+                    <div class="blog-post">
+    <h3 class="blog-post-title">
+        <a class="link" href="https://vades.github.io/cheatsheets/cheat-sheets/Git-Cheat-Sheet/">Git Cheat Sheet</a>
+    </h3>
+    
+        <div class="blogging-tags-grid">
+        
+        <a href="#git" class="blogging-tag"><code>#git</code></a>
+        
+        <a href="#cheat sheet" class="blogging-tag"><code>#cheat sheet</code></a>
+        
+    </div>
+    
+        
+
+    
+    <p class="blog-post-description">
+        This cheat sheet provides a list of 30 commonly used Git commands
+    </p>
+    <div class="blog-post-extra">
+        Published at: 2023-01-23
+    </div>
+    <hr />
+</div>
+
+                    
+                
+                    
+                    
+                    
+                    
+
+                    
+                    
+                        
+                    
+
+                    
+                    
+                        
+                    
+                    
+                    <div class="blog-post">
+    <h3 class="blog-post-title">
+        <a class="link" href="https://vades.github.io/cheatsheets/cheat-sheets/Laravel-Cheat-Sheet/">Laravel Artisan Command Cheat Sheet</a>
+    </h3>
+    
+        <div class="blogging-tags-grid">
+        
+        <a href="#laravel" class="blogging-tag"><code>#laravel</code></a>
+        
+        <a href="#cheat sheet" class="blogging-tag"><code>#cheat sheet</code></a>
+        
+    </div>
+    
+        
+
+    
+    <p class="blog-post-description">
+        This cheat sheet provides a list of frequently used Laravel Artisan commands
+    </p>
+    <div class="blog-post-extra">
+        Published at: 2022-12-09
+    </div>
+    <hr />
+</div>
+
+                    
+                
+                    
+                    
+                    
+                    
+
+                    
+                    
+                        
+                    
+
+                    
+                    
+                        
+                    
+                    
+                    <div class="blog-post">
+    <h3 class="blog-post-title">
+        <a class="link" href="https://vades.github.io/cheatsheets/cheat-sheets/NX-Cheat-Sheet/">NX Commands Cheat Sheet</a>
+    </h3>
+    
+        <div class="blogging-tags-grid">
+        
+        <a href="#angular" class="blogging-tag"><code>#angular</code></a>
+        
+        <a href="#nx" class="blogging-tag"><code>#nx</code></a>
+        
+        <a href="#cheat sheet" class="blogging-tag"><code>#cheat sheet</code></a>
+        
+    </div>
+    
+        
+
+    
+    <p class="blog-post-description">
+        This cheat sheet covers a range of common NX commands used in an Angular workspace
+    </p>
+    <div class="blog-post-extra">
+        Published at: 2022-09-22
+    </div>
+    <hr />
+</div>
+
+                    
+                
+                    
+                    
+                    
+                    
+
+                    
+                    
+                        
+                    
+
+                    
+                    
+                        
+                    
+                    
+                    <div class="blog-post">
+    <h3 class="blog-post-title">
+        <a class="link" href="https://vades.github.io/cheatsheets/cheat-sheets/RxJs-Cheat-Sheet/">RxJS Most Used Operators</a>
+    </h3>
+    
+        <div class="blogging-tags-grid">
+        
+        <a href="#rxjs" class="blogging-tag"><code>#rxjs</code></a>
+        
+        <a href="#cheat sheet" class="blogging-tag"><code>#cheat sheet</code></a>
+        
+    </div>
+    
+        
+
+    
+    <p class="blog-post-description">
+        This cheat sheet provides a quick reference for most used RxJS operators.
+    </p>
+    <div class="blog-post-extra">
+        Published at: 2022-09-19
+    </div>
+    <hr />
+</div>
+
+                    
+                
+                    
+                    
+                    
+                    
+
+                    
+                    
+                        
+                    
+
+                    
+                    
+                        
+                    
+                    
+                    <div class="blog-post">
+    <h3 class="blog-post-title">
+        <a class="link" href="https://vades.github.io/cheatsheets/cheat-sheets/Top-30-AWS-services/">Top 30 AWS services</a>
+    </h3>
+    
+        <div class="blogging-tags-grid">
+        
+        <a href="#rxjs" class="blogging-tag"><code>#rxjs</code></a>
+        
+        <a href="#cheat sheet" class="blogging-tag"><code>#cheat sheet</code></a>
+        
+    </div>
+    
+        
+
+    
+    <p class="blog-post-description">
+        With hundreds of services available, it can be difficult to know which to choose. This list of the 30 most used AWS services is the perfect guide for managers and developers who need to save time.
+    </p>
+    <div class="blog-post-extra">
+        Published at: 2022-09-19
+    </div>
+    <hr />
+</div>
+
+                    
+                
+            </div>
+        
+    </div>
+
+    <div class="blog-center blog-hidden">
+        <div class="blog-pagination " id="blog-pagination">
+            
+                
+                    
+                
+                <a class="page-number" href="">1</a>
+            
+        </div>
+        
+            <div>Total <b>7</b> posts.</div>
+        
+    </div>
+</div></p>
+<!-- Source file information -->
+<!-- Was this page helpful? -->
+<!-- Comment system -->
+</article>
+</div>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Back to top
+          </button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      © 2023 Martin Vach
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.indexes", "navigation.top", "navigation.tracking"], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+</body>
+</html><script>var currentPage = 0
+const lastComponent = window.location.href.split("/").slice(-1).pop()
+
+if (lastComponent && lastComponent.slice(0, 7) == "#blog-p") {
+  const page = parseInt(lastComponent.slice(7))
+  if (page) {
+    currentPage = page - 1
+  }
+}
+
+function scrollToTop() {
+  setTimeout(function () {
+    window.scrollTo(0, 0);
+  }, 100);
+}
+
+const onButtonClick = (ele) => {
+  var current = pagination.getElementsByClassName("active");
+  if (current.length) {
+    current[0].className = current[0].className.replace(
+      " active", ""
+    );
+  }
+  ele.className += " active";
+
+  // Togglg visibility of pages
+  const destPage = parseInt(ele.textContent)
+  var pages = document.getElementsByClassName("page")
+  if (destPage && pages.length) {
+    for (var j = 0; j < pages.length; j++) {
+      const pageId = parseInt(pages[j].id.replace("page", ""))
+      if (pageId != destPage) {
+        // This is not the destination page
+        if (!pages[j].className.includes("blog-hidden")) {
+          pages[j].className += " blog-hidden"
+        }
+      } else {
+        // This is the destination page
+        pages[j].className = pages[j].className.replace(" blog-hidden", "")
+      }
+    }
+    scrollToTop();
+  }
+};
+
+var pagination = document.getElementById("blog-pagination");
+if (pagination) {
+  var links = pagination.getElementsByClassName("page-number");
+  if (links.length) {
+    for (var i = 0; i < links.length; i++) {
+      // Toggle pagination highlight
+      links[i].addEventListener("click", function () {
+        onButtonClick(this);
+      });
+    }
+    links[currentPage].className += " active"
+    onButtonClick(links[currentPage]);
+  }
+}
+</script>

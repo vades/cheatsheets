@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "extra-style.3jmk2ihz.min.css",
+	"sources": [
+		"extra_sass/style.css.scss",
+		"extra_sass/variables.scss"
+	],
+	"sourcesContent": [
+		"@import 'variables';\n\n// Navigation\n.md-nav--primary{\n    .md-nav__title{\n        display: none;\n    }\n}\n\n// Home\n.md-content{\n    &.home{\n        .blogging-tags-grid,.blog-post-extra{\n            display: none;\n        }\n    }\n}\n\n// Blogging\n.blog-post{\n    h3 {\n        margin-top: 0;\n    }\n    margin-bottom: $spacing-2x;\n    .blog-post-extra{\n        strong{\n            margin-right: $spacing-0-5x;\n        }\n    }\n} \n\n\n.blog-post-header{\n    margin-bottom: $spacing;\n    strong{\n        margin-right: $spacing-0-5x;\n    }\n}\n.blog-post-perex{\n    font-size: 110%;\n    font-weight:bold;\n}\n\n.blogging-tags-grid{\n    a{\n        display: inline-block;\n        margin-right: $spacing-0-5x; \n    }\n}",
+		"// -----------------------------------------------------------------------------\n// Dimensions\n// -----------------------------------------------------------------------------\n\n// Container max width\n$container-max-w: 1280px;\n\n/* Breakpoints for standard devices\n-------------------------------------------------- */\n\n// Extra small devices (max-width = 480px)\n$break-xs: 480px;\n\n// Small devices (min-width = 600px and max-width = 959.99px)\n$break-s: 600px;\n\n// Medium devices (min-width = 960px and max-width = 1279.99px)\n$break-m: 960px;\n\n// Large devices (min-width = 1280px and max-width = 1919.99px)\n$break-l: 1280px;\n\n// Extra large (min-width = 1920px)\n$break-xl: 1920px;\n\n// spacing\n$spacing: 1rem;\n$spacing-2x: $spacing * 2;\n$spacing-3x: $spacing * 3;\n$spacing-4x: $spacing * 4;\n$spacing-0-5x: 0.5rem;\n$spacing-1-5x: $spacing + $spacing-0-5x;\n"
+	],
+	"names": [],
+	"mappings": "AAGA,AACI,gBADY,CACZ,cAAc,AAAA,CACV,OAAO,CAAE,IAAI,CAChB,AAIL,AAEQ,WAFG,AACN,KAAK,CACF,mBAAmB,CAF3B,WAAW,AACN,KAAK,CACkB,gBAAgB,AAAA,CAChC,OAAO,CAAE,IAAI,CAChB,AAKT,AAAA,UAAU,AAAA,CAIN,aAAa,CCIJ,IAAY,CDExB,AAVD,AACI,UADM,CACN,EAAE,AAAC,CACC,UAAU,CAAE,CAAC,CAChB,AAHL,AAMQ,UANE,CAKN,gBAAgB,CACZ,MAAM,AAAA,CACF,YAAY,CCIT,KAAM,CDHZ,AAKT,AAAA,iBAAiB,AAAA,CACb,aAAa,CCPP,IAAI,CDWb,AALD,AAEI,iBAFa,CAEb,MAAM,AAAA,CACF,YAAY,CCLL,KAAM,CDMhB,AAEL,AAAA,gBAAgB,AAAA,CACZ,SAAS,CAAE,IAAI,CACf,WAAW,CAAC,IAAI,CACnB,AAED,AACI,mBADe,CACf,CAAC,AAAA,CACG,OAAO,CAAE,YAAY,CACrB,YAAY,CChBL,KAAM,CDiBhB"
+}
