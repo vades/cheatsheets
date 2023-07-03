@@ -35,15 +35,19 @@ def git_push(branch_name):
             # Run git commands
 
             print('\n*********** Committing and pushing to git ***********')
+            file_log.debug(f'Committing and pushing to git')
             repo.git.add("--all")
             repo.git.commit("-m", commit_message)
             repo.git.push("origin")
             print(f'\n*********** {commit_message} ***********')
+            file_log.debug(commit_message)
         except Exception as e:
             print("An error occurred while pushing to git:", e)
+            file_log.exception('An error occurred while pushing to git')
 
     else:
         print("No changes to commit.")
+        file_log.warning('No changes to commit.')
 
 
 # The following block will only be executed if the script is run directly,
