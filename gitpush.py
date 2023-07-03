@@ -1,12 +1,22 @@
 from git import Repo
 import socket
 from datetime import datetime
+import logging
 
 branch_name = "develop"
+
+# Configure logger for file output
+file_log = logging.getLogger("file_log")
+file_log.setLevel(logging.DEBUG)
+file_handler = logging.FileHandler("app.log")
+file_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+file_handler.setFormatter(file_formatter)
+file_log.addHandler(file_handler)
 
 
 def git_push(branch_name):
     print('\n*********** Initializing Repo ***********')
+    file_log.debug(f'Initializing Repo and Branch {branch_name}')
     # Initialize the repository object
     repo = Repo()
 
