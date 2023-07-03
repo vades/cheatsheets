@@ -9,7 +9,7 @@
 {% block container %}
    {% set url_segments = page.url if page.url else '/' %}
    {% set content_class = url_segments.split("/")[0] %}
-   <div class="md-content {{content_class}}" data-md-component="content">
+   <div class="md-content {{content_class if content_class else 'home'}}" data-md-component="content">
       <article class="md-content__inner md-typeset">
          {% block content %}
             {% include "partials/content.html" %}
