@@ -1,10 +1,11 @@
 # Basics
 site_name: Chet Sheets
-nav:
+_nav:
   - Home: index.md
-  - Cheat Sheets: cheat-sheets.md
-  - Tags: tags.md
-  - About: about.md
+  - Pages:
+      - pages/index.md
+  - Tags: pages/tags.md
+  - About: pages/about.md
 theme:
   name: material
   custom_dir: overrides
@@ -15,12 +16,31 @@ theme:
     - navigation.sections
     - navigation.indexes
     - navigation.top
+    - navigation.tracking
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 copyright: "© 2023 Martin Vach"
 extra_css:
   - "styles/styles.css"
 # blog implementation
 site_url: http://127.0.0.1:8000/
+watch:
+  - "overrides"
 plugins:
+  - search:
+      min_search_length: 2
+  - extra-sass
+  - awesome-pages
   - blogging:
       features:
         tags: {}
@@ -30,7 +50,7 @@ plugins:
         - name: cheat-sheets
           dirs:
             - cheat-sheets
-      template: overrides/my-blog.html
+      template: overrides/custom-blog.html
       full_content: false
       time_format: "%Y-%m-%d"
       meta_time_format: "%Y-%m-%d"
